@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Suite">
+	<listeners>
+		<listener class-name="com.genericUtility.ListenerImplementation"></listener>
+	</listeners>
+  <test thread-count="1" parallel="classes" name="TestRun1">
+    <classes>
+      <class name="customer.customerOpenAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="1" parallel="classes" name="TestRun2">
+    <classes>
+      <class name="customer.ApplyDebitCard"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="1" parallel="classes" name="TestRun3">
+    <classes>
+      <class name="customer.fundTransferUtilityTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="1" parallel="classes" name="TestRun4">
+    <classes>
+      <class name="customer.InternetBankingT"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
